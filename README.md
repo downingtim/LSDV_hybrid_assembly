@@ -18,8 +18,11 @@ The scripts "kraken.illumina.extract.2.sh" and "kraken.ont.extract.sh" were used
 Read counts:
 The script "2_get_read_stats.py" was used to measure read number and rates.
 
-Flye v2.9.1-b1784 using a subset of the longest reads for initial disjointig assembly, 10 polishing iterations, an expected genome size of 151 Kb, and high-quality ONT reads.
-SPAdes v3.13.1 was run in careful mode using a range of input: the ONT reads, the Illumina reads, and the Flye assembly. 
+Flye v2.9.1-b1784 using a subset of the longest reads for initial disjointig assembly, 10 polishing iterations, an expected genome size of 151 Kb, and high-quality ONT reads. See flye.sh.
+SPAdes v3.13.1 was run in careful mode using a range of input: the ONT reads, the Illumina reads, and the Flye assembly. See spades.sh.
+Medaka was run with comamnds in medaka.sh.
+Polypolish and pypolca were run with commands in polypolish_pypolca.sh.
+Quast was used to assess assembly quality with quast.sh.
 
 Pilon:
 The script "run_pilon.sh" implemented the Pilon iterations.
